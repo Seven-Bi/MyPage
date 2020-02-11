@@ -1,0 +1,11 @@
+version: '3'
+
+
+services:
+    react:
+      build: ./my-page
+      command: npm start
+    nginx:
+        build: .
+        ports:
+          - '8000:80'
