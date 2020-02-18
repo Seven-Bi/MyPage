@@ -2,10 +2,20 @@ version: '3'
 
 
 services:
-    react:
-      build: ./my-page
-      command: npm start
+    api:
+      build: ./api
+      ports:
+        - '8000:8000'
+      command: bash -c "python3 my_api/manage.py migrate && python3 my_api/manage.py runserver 0.0.0.0:8000"
     nginx:
-        build: .
-        ports:
-          - '8000:80'
+      build: ./nginx
+      ports:
+        - '80:80'
+      depends_on:
+        - api
+    react:
+      build: ./react_page
+      ports:
+        - '3000:3000'
+      depends_on:
+        - nginx
