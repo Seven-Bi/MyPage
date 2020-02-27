@@ -1,12 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import img1 from './static/image/qiuqiu.jpg';
+import img2 from './static/image/qiuqiu1.jpg';
+import img3 from './static/image/qiuqiu2.jpg';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class MyView extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			msg: '仲qiuqiu'
+		};
+	}
+
+	render() {
+		return (
+			<div>
+				<div>
+					<span><h1> {this.state.msg} </h1></span>
+				</div>
+				<div>
+					<img src={img1} />
+				</div>			
+			</div>
+		);
+	}
+}
+
+
+// ========================================
+
+
+ReactDOM.render(
+	<MyView/>,
+	document.getElementById('root'),	
+);
