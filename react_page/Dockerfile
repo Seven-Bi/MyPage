@@ -19,7 +19,7 @@ RUN apt-get install -y nginx
 RUN mkdir /home/code
 WORKDIR /home/code
 COPY . .
-RUN npm install
+RUN npm install --no-optional
 RUN npm run build
 COPY nginx.conf /etc/nginx/nginx.conf
 
