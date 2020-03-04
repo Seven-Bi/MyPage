@@ -1,32 +1,15 @@
-FROM ubuntu:18.04
+FROM python:3.8
 
-
-RUN apt-get update && \
-	apt-get install -y locales locales-all
-ENV LC_ALL en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US.UTF-8
-
-
-RUN apt-get -y install software-properties-common
-RUN add-apt-repository ppa:deadsnakes/ppa
-RUN apt-get update
-RUN apt-get -y install python3.6
-RUN apt-get -y install python3-pip
 
 ENV PYTHONUNBUFFERED 1
-RUN mkdir /home/code
-RUN mkdir /home/static
-COPY . /home/code/
-WORKDIR /home/code/
-RUN pip3 install --no-cache-dir -r requirements.txt
-RUN python3 my_api/manage.py collectstatic --noinput
+ENV API_DIR /api
 
+RUN mkdir -p /var/log/gunicorn
+RUN mkdir $API_DIR
+WORKDIR $API_DIR
 
-RUN apt-get update
-RUN apt-get install -y nginx
-COPY nginx.conf /etc/nginx/nginx.conf
-
-EXPOSE 80
-STOPSIGNAL SIGTERM
-CMD ["nginx", "-g", "daemon off;"]
+ADD requirements.txt $API_DIR/
+RUN pip install --no-cache-dir -r requirements.txt
+ADD my_api $API_DIR/
+RUN python manage.py migrate
+COPY . $API_DIR/
