@@ -5,17 +5,5 @@ services:
     api:
       build: ./api
       ports:
-        - '0.0.0.0:8000:8000'
-      command: bash -c "python3 my_api/manage.py migrate && gunicorn --chdir my_api my_api.wsgi -b 0.0.0.0:8000"
-    react:
-      build: ./react_page
-      ports:
-        - '0.0.0.0:3000:3000'
-      depends_on:
-        - api
-    nginx:
-      build: ./nginx
-      ports:
-        - '0.0.0.0:80:80'
-      depends_on:
-        - react
+        - '81:81'
+      command: bash -c "python3 my_api/manage.py migrate && python3 my_api/manage.py collectstatic --noinput && gunicorn --chdir my_api --bind unix:/home/code/my_api/my_api.sock my_api.wsgi"

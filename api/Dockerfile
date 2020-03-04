@@ -25,8 +25,8 @@ RUN python3 my_api/manage.py collectstatic --noinput
 
 RUN apt-get update
 RUN apt-get install -y nginx
-COPY nginx.conf /etc/nginx/nginx.conf	
+COPY nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 81
+EXPOSE 80
 STOPSIGNAL SIGTERM
 CMD ["nginx", "-g", "daemon off;"]
