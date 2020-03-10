@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import img1 from './static/image/qiuqiu.jpg';
-import img2 from './static/image/qiuqiu1.jpg';
-import img3 from './static/image/qiuqiu2.jpg';
+import img1 from './static/qiuqiu_img/qiuqiu.jpg';
+import img2 from './static/qiuqiu_img/qiuqiu1.jpg';
+import img3 from './static/qiuqiu_img/qiuqiu2.jpg';
 
 
 class MyView extends React.Component {

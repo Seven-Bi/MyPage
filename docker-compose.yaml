@@ -4,18 +4,25 @@ version: '3'
 services:
     api:
       build: ./api
-      volumes: 
-        - ./api:/api
       command: bash -c 'python my_api/manage.py collectstatic --noinput && gunicorn -c gunicorn.conf.py --chdir my_api my_api.wsgi'
       ports:
         - '8000:8000'
+      volumes: 
+        - ./api:/api
+    react:
+      build: ./react
+      command: nginx -g 'daemon off;'
+      ports:
+        - '3000:3000'
     nginx:
       build: ./nginx
       depends_on:
         - api
+        - react
       command: nginx -g 'daemon off;'
       ports:
         - '80:80'
       volumes:
         - ./api/static:/var/www/static
         - ./api/media:/var/www/media
+        - ./nginx/nginx.conf:/etc/nginx/nginx.conf
