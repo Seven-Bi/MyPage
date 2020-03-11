@@ -25,4 +25,5 @@ services:
       volumes:
         - ./api/static:/var/www/static
         - ./api/media:/var/www/media
+        - ./react/build/static:/var/www/react/static
         - ./nginx/nginx.conf:/etc/nginx/nginx.conf
