@@ -1,21 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Loader from './profile_loader.js';
+import ImgLoader from './img_profile.js';
 
 
 
 class MyView extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			msg: '仲qiuqiu - - !'
-		};
-	}
 
 	render() {
 		return (
 			<div>
-				<Loader />
+				<ImgLoader />
 			</div>
 		);
 	}
@@ -23,7 +17,6 @@ class MyView extends React.Component {
 
 
 // ========================================
-
 
 ReactDOM.render(
 	<MyView/>,
