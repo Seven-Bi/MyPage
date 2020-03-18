@@ -48,6 +48,7 @@ const useStyles = makeStyles(theme => ({
 		display: 'flex',
 		flexWrap: 'wrap',
 		justifyContent: 'space-around',
+		margin: theme.spacing(1),
 		overflow: 'hidden',
 		backgroundColor: theme.palette.background.paper,
 	},
@@ -66,7 +67,7 @@ export default function SingleLineGridList() {
 
 	return (
 		<div className={classes.root}>
-			<GridList spacing={1} className={classes.gridList} cols={2.5}>
+			<GridList spacing={3} cellHeight={250} className={classes.gridList} cols={2.5}>
 				{
 					data.map(tile => (
 						<GridListTile key={tile.img}>
