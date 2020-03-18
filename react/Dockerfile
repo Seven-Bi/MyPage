@@ -6,6 +6,7 @@ WORKDIR /node
 COPY . .
 RUN npm install --no-optional
 RUN npm install @material-ui/core
+RUN npm install @material-ui/icons
 RUN npm run build
 
 

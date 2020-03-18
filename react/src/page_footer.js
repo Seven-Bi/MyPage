@@ -13,21 +13,20 @@ const useStyles = makeStyles(theme => ({
 		'& > *': {
 			margin: theme.spacing(1),
 			width: theme.spacing(200),
-			height: theme.spacing(10),
+			height: theme.spacing(7),
 		},
 		justifyContent: 'space-around',
 	},
 }));
 
-
-export default function HeadBar() {
+export default function FootBar() {
 	const classes = useStyles();
 
 	return (
 		<div className={classes.root}>
 			<Card>
 				<CardContent>
-					<Typography variant="subtitle1" gutterBottom>
+					<Typography align="center" variant="subtitle1" gutterBottom>
 					 	head bar
 					</Typography>
 				</CardContent>

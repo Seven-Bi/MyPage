@@ -12,23 +12,23 @@ const useStyles = makeStyles(theme => ({
 		flexWrap: 'wrap',
 		'& > *': {
 			margin: theme.spacing(1),
-			width: theme.spacing(100),
-			height: theme.spacing(247),
+			width: theme.spacing(200),
+			height: theme.spacing(7),
 		},
 		justifyContent: 'space-around',
 	},
 }));
 
 
-export default function SideProfile() {
+export default function HeadBar() {
 	const classes = useStyles();
 
 	return (
 		<div className={classes.root}>
 			<Card>
 				<CardContent>
-					<Typography align="center" variant="subtitle1" gutterBottom>
-					 	side content
+					<Typography variant="subtitle1" gutterBottom>
+					 	head bar
 					</Typography>
 				</CardContent>
 			</Card>
