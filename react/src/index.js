@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 import ImgLoader from './img_profile.js';
 import SideLoader from './side_profile.js';
 import ContentLoader from './content_loader.js';
@@ -18,7 +19,6 @@ class MyView extends React.Component {
 				  container
 				  direction="column"
 				  justify="flex-start"
-				  alignItems="stretch"
 				>
 					<Header />
 					<Grid
@@ -27,7 +27,7 @@ class MyView extends React.Component {
 					  justify="flex-start"
 					  alignItems="stretch"
 					>
-						<Grid item xs={12} sm={9}>
+						<Grid item xs={12} sm={9} alignItems="stretch">
 							<div>
 								<ImgLoader />
 							</div>
@@ -35,7 +35,7 @@ class MyView extends React.Component {
 								<ContentLoader />
 							</div>
 						</Grid>
-						<Grid item xs={12} sm={3}>
+						<Grid item xs={12} sm={3} alignItems="stretch">
 							<SideLoader />
 						</Grid>
 					</Grid>
