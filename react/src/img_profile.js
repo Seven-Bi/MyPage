@@ -74,7 +74,7 @@ const iconStyles = makeStyles(theme => ({
 	    zIndex: "tooltip"
 	},
 	right: {
-		right: 345,
+		right: 360,
 	    top: 190,
 	    position: 'absolute',
 	    color: 'white',

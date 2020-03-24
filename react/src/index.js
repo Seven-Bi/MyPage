@@ -19,8 +19,11 @@ class MyView extends React.Component {
 				  container
 				  direction="column"
 				  justify="flex-start"
+				  alignItems="stretch"
 				>
-					<Header />
+					<Grid item xs={12} alignItems="stretch">
+						<Header />
+					</Grid>
 					<Grid
 					  container
 					  direction="row"
@@ -39,7 +42,9 @@ class MyView extends React.Component {
 							<SideLoader />
 						</Grid>
 					</Grid>
-					<Footer />
+					<Grid item xs={12} alignItems="stretch">
+						<Footer />
+					</Grid>
 				</Grid>
 			</div>
 		);
