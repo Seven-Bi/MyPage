@@ -5,7 +5,6 @@ import { GridListTileBar } from '@material-ui/core';
 import { Box } from '@material-ui/core';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import { positions } from '@material-ui/system'
 import img1 from './static/qiuqiu_img/qiuqiu.jpg';
 import img2 from './static/qiuqiu_img/qiuqiu1.jpg';
 import img3 from './static/qiuqiu_img/qiuqiu2.jpg';
@@ -84,11 +83,16 @@ const iconStyles = makeStyles(theme => ({
 }));
 
 
-export default function SingleLineGridList() {
+const SingleLineGridList = () => {
 
 	const classes = useStyles();
 	const iconcls = iconStyles();
 
+	function handleClick(e){
+	    e.preventDefault();
+	    console.log('The link was clicked.');
+	}
+	//this.refs.hello.scrollIntoView(); // scroll...
 	return (
 		<div className={classes.root}>
 			<Box zIndex="tooltip">
@@ -97,8 +101,8 @@ export default function SingleLineGridList() {
 			<GridList spacing={3} cellHeight={250} className={classes.gridList} cols={2.5}>
 				{
 					data.map(tile => (
-						<GridListTile key={tile.img}>
-							<img src={tile.img} />
+						<GridListTile key={tile.img} onClick={handleClick}>
+							<img src={tile.img} alt='' />
 							<GridListTileBar
 								title={tile.title}
 								classes={{
@@ -115,4 +119,7 @@ export default function SingleLineGridList() {
 			</Box>
 		</div>
 	)
+
 }
+
+export default SingleLineGridList;

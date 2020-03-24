@@ -31,7 +31,7 @@ const data_list = [
 		date: '21-02-2021',
 	},
 	{
-		text: 'Hi this is a test message',
+		text: 'Hi this is a test messageasdasdklasjdlaskjdklajslkdjaslkjdlkasjdklajskldjaskljdlkasjdlkasjlkdjaskljdklaskjdlajsd',
 		date: '21-02-2022',
 	},
 ];
@@ -51,29 +51,33 @@ export default function SimplePaper() {
 						const fab_style = {
 						    margin: 0,
 						    top: 2000,
-						    right: 800,
+					        left: '37%',
 						    position: 'absolute',
 						};
 						return (
-							<Card>
+							<Card key={count}>
 								<CardContent>
+
 									<Typography variant="subtitle1" gutterBottom>
 									 	{content.text}
 									</Typography>
 									<Fab style={fab_style} color="primary" aria-label="add">
 										<AddIcon />
 									</Fab>
+	
 								</CardContent>
 							</Card>
 						)
 					}
 					else {
 						return (
-							<Card>
+							<Card key={count}>
 								<CardContent>
+	
 									<Typography variant="subtitle1" gutterBottom>
 									 	{content.text}
 									</Typography>
+
 								</CardContent>
 							</Card>
 						)

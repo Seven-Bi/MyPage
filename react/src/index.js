@@ -21,7 +21,7 @@ class MyView extends React.Component {
 				  justify="flex-start"
 				  alignItems="stretch"
 				>
-					<Grid item xs={12} alignItems="stretch">
+					<Grid item xs={12}>
 						<Header />
 					</Grid>
 					<Grid
@@ -30,7 +30,7 @@ class MyView extends React.Component {
 					  justify="flex-start"
 					  alignItems="stretch"
 					>
-						<Grid item xs={12} sm={9} alignItems="stretch">
+						<Grid item xs={12} sm={9}>
 							<div>
 								<ImgLoader />
 							</div>
@@ -38,11 +38,11 @@ class MyView extends React.Component {
 								<ContentLoader />
 							</div>
 						</Grid>
-						<Grid item xs={12} sm={3} alignItems="stretch">
+						<Grid item xs={12} sm={3}>
 							<SideLoader />
 						</Grid>
 					</Grid>
-					<Grid item xs={12} alignItems="stretch">
+					<Grid item xs={12}>
 						<Footer />
 					</Grid>
 				</Grid>
