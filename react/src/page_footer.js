@@ -1,36 +1,27 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card } from '@material-ui/core';
-import { CardContent } from '@material-ui/core';
-import { Typography } from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
 
 
 
 const useStyles = makeStyles(theme => ({
-	root: {
-		display: 'flex',
-		flexWrap: 'wrap',
-		'& > *': {
-			margin: theme.spacing(1),
-			width: theme.spacing(250),
-			height: theme.spacing(7),
-		},
-		justifyContent: 'space-around',
-	},
+	basefooter: {
+		marginTop: '0',
+		marginBottom: '2vh',
+		textAlign: 'center',
+		width: '100%',
+	}
 }));
+
 
 export default function FootBar() {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.root}>
-			<Card>
-				<CardContent>
-					<Typography align="center" variant="subtitle1" gutterBottom>
-					 	footer bar
-					</Typography>
-				</CardContent>
-			</Card>
+		<div className={classes.basefooter}>
+			<Paper>
+				LOL
+			</Paper>
 		</div>
 	);
 }

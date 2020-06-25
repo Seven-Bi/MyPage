@@ -1,4 +1,4 @@
-FROM node:latest AS build
+FROM node:latest AS builder
 
 
 RUN mkdir /node
@@ -16,8 +16,7 @@ RUN mkdir /home/code
 WORKDIR /home/code
 RUN chown -R nginx:nginx /home/code
 
-COPY --from=build /node .
+COPY --from=builder /node .
 ADD /src/static/* ./build/static/
 COPY nginx.conf /etc/nginx/nginx.conf
-
 EXPOSE 3000
