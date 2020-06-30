@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card'
 import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
 import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
 
@@ -49,16 +48,15 @@ export default function Skills() {
 			</div>
 
 			<div className={classes.text_content}>
-				<Chip className={classes.content_item} avatar={<Avatar>:)</Avatar>} label="HTML & CSS & JS" />
-				<Chip className={classes.content_item} avatar={<Avatar>:)</Avatar>} label="React" />
-				<Chip className={classes.content_item} avatar={<Avatar>:)</Avatar>} label="Python & Java" />
-				<Chip className={classes.content_item} avatar={<Avatar>:)</Avatar>} label="OOPD" />
-				<Chip className={classes.content_item} avatar={<Avatar>:)</Avatar>} label="Django" />
-				<Chip className={classes.content_item} avatar={<Avatar>:)</Avatar>} label="Restful API Design" />
-				<Chip className={classes.content_item} avatar={<Avatar>:)</Avatar>} label="Git & Docker" />
-				<Chip className={classes.content_item} avatar={<Avatar>:)</Avatar>} label="SQL" />
-				<Chip className={classes.content_item} avatar={<Avatar>:)</Avatar>} label="Web Crawler" />
-				<Chip className={classes.content_item} avatar={<Avatar>:)</Avatar>} label="Pygame" />
+				<Chip className={classes.content_item} label="HTML & CSS & JS" />
+				<Chip className={classes.content_item} label="React" />
+				<Chip className={classes.content_item} label="Python & Java" />
+				<Chip className={classes.content_item} label="OOPD" />
+				<Chip className={classes.content_item} label="Django" />
+				<Chip className={classes.content_item} label="Restful API Design" />
+				<Chip className={classes.content_item} label="Git & Docker" />
+				<Chip className={classes.content_item} label="SQL" />
+				<Chip className={classes.content_item} label="Web Crawler" />
 			</div>
 		</Card>
 	);

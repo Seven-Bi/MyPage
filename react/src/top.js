@@ -10,7 +10,7 @@ import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
 	base_top: {
-		marginTop: '3vh',
+		marginTop: '4vh',
 		marginBottom: '3vh',
 		backgroundColor: '#F2F2F2',
 	},
@@ -41,7 +41,7 @@ export default function Top() {
             
 			<div className={classes.text_content}>
 	            <Typography gutterBottom variant="h5">
-					WEB APP DEVELOPER/SOFTWARE ENGINEER
+					FULL STACK DEVELOPER/SOFTWARE ENGINEER
 	            </Typography>			
 			</div>
 
