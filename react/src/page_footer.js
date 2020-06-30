@@ -5,7 +5,7 @@ import Paper from '@material-ui/core/Paper';
 
 
 const useStyles = makeStyles(theme => ({
-	basefooter: {
+	base_footer: {
 		marginTop: '0',
 		marginBottom: '2vh',
 		textAlign: 'center',
@@ -18,7 +18,7 @@ export default function FootBar() {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.basefooter}>
+		<div className={classes.base_footer}>
 			<Paper>
 				LOL
 			</Paper>

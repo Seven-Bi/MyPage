@@ -1,19 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Footer from './page_footer.js';
-import ImgProfile from './img_profile.js';
+import Top from './top.js';
+import Skills from './skills.js';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import img1 from './static/qiuqiu_img/qiuqiu.jpg';
-import img2 from './static/qiuqiu_img/qiuqiu1.jpg';
-import img3 from './static/qiuqiu_img/qiuqiu2.jpg';
-import img4 from './static/qiuqiu_img/qiuqiu3.jpg';
-import img5 from './static/qiuqiu_img/qiuqiu4.jpg';
-import img6 from './static/qiuqiu_img/qiuqiu5.jpg';
-import img7 from './static/qiuqiu_img/qiuqiu6.jpeg';
-
-
 
 
 
@@ -25,10 +17,10 @@ const useStyles = makeStyles(theme => ({
 		width: '65%',
 	},
 	paper: {
-		backgroundColor: '#D8D8D8',
+		backgroundColor: '#87A4FF',
 		position: 'fixed',
 		top: '0',
-		left: '17%',
+		left: '16.7%',
 	},
 	img_item: {
 		alignItems: 'stretch',
@@ -40,12 +32,12 @@ export default function HeadBar() {
 	const classes = useStyles();
 	const [value, setValue] = React.useState();
 	const list = [
-		{'id': '0', 'template': <ImgProfile />},
-		{'id': '1', 'template': <ImgProfile />},
-		{'id': '2', 'template': <ImgProfile />},
-		{'id': '3', 'template': <ImgProfile />},
-		{'id': '4', 'template': <ImgProfile />},
-		{'id': '5', 'template': <ImgProfile />},
+		{'id': '0', 'template': <Top />},
+		{'id': '1', 'template': <Skills />},
+		{'id': '2', 'template': <Top />},
+		{'id': '3', 'template': <Top />},
+		{'id': '4', 'template': <Top />},
+		{'id': '5', 'template': <Top />},
 	];
 	const refs = list.reduce((acc, value) => {
 		acc[value.id] = React.createRef();

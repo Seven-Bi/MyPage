@@ -63,30 +63,9 @@ const useStyles = makeStyles(theme => ({
 	},
 }));
 
-const iconStyles = makeStyles(theme => ({
-	left: {
-		left: 5,
-	    top: 190,
-	    position: 'absolute',
-	    color: 'white',
-	    fontSize: '60px',
-	    zIndex: "tooltip"
-	},
-	right: {
-		right: 360,
-	    top: 190,
-	    position: 'absolute',
-	    color: 'white',
-	    fontSize: '60px',
-	    zIndex: "tooltip"
-	},
-}));
-
-
 const SingleLineGridList = () => {
 
 	const classes = useStyles();
-	const iconcls = iconStyles();
 
 	function handleClick(e){
 	    e.preventDefault();
@@ -95,10 +74,7 @@ const SingleLineGridList = () => {
 	//this.refs.hello.scrollIntoView(); // scroll...
 	return (
 		<div className={classes.root}>
-			<Box zIndex="tooltip">
-				<ArrowLeftIcon className={iconcls.left} />
-			</Box>
-			<GridList spacing={3} cellHeight={250} className={classes.gridList} cols={2.5}>
+			<GridList spacing={1} cellHeight={200} className={classes.gridList} cols={2.5}>
 				{
 					data.map(tile => (
 						<GridListTile key={tile.img} onClick={handleClick}>
@@ -114,9 +90,6 @@ const SingleLineGridList = () => {
 					))
 				}				
 			</GridList>
-			<Box zIndex="tooltip">
-				<ArrowRightIcon className={iconcls.right} />
-			</Box>
 		</div>
 	)
 
