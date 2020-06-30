@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card'
-import img1 from './static/qiuqiu_img/qiuqiu.jpg';
+import img1 from './static/img/profile_img.JPG';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
 	base_top: {
 		marginTop: '3vh',
 		marginBottom: '3vh',
-		backgroundColor: '#F0F0F0',
+		backgroundColor: '#F2F2F2',
 	},
 	text_content: {
 		margin: theme.spacing(1.5),
@@ -32,16 +32,16 @@ export default function Top() {
 
 	return (
 		<Card className={classes.base_top}>
-			<img src={img1} alt="" width="350" height="450" />
+			<img src={img1} alt="" width="250" height="400" />
 			<div className={classes.text_content}>
 	            <Typography gutterBottom variant="h3">
-					Steven Bi
+					STEVEN BI
 	            </Typography>			
 			</div>
             
 			<div className={classes.text_content}>
 	            <Typography gutterBottom variant="h5">
-					Web App Developer/Software Engineer
+					WEB APP DEVELOPER/SOFTWARE ENGINEER
 	            </Typography>			
 			</div>
 

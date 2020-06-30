@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Footer from './page_footer.js';
 import Top from './top.js';
 import Skills from './skills.js';
+import Work from './work.js';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -34,10 +35,10 @@ export default function HeadBar() {
 	const list = [
 		{'id': '0', 'template': <Top />},
 		{'id': '1', 'template': <Skills />},
-		{'id': '2', 'template': <Top />},
-		{'id': '3', 'template': <Top />},
-		{'id': '4', 'template': <Top />},
-		{'id': '5', 'template': <Top />},
+		{'id': '2', 'template': <Work />},
+		// {'id': '3', 'template': <Top />},
+		// {'id': '4', 'template': <Top />},
+		// {'id': '5', 'template': <Top />},
 	];
 	const refs = list.reduce((acc, value) => {
 		acc[value.id] = React.createRef();
