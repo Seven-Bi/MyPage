@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card'
 import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
 
 
@@ -15,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: '#F2F2F2',
 	},
 	text_title: {
-		margin: theme.spacing(1.5),
+		margin: theme.spacing(2),
 		display: 'flex',
 		flexDirection: 'column',
 		flexWrap: 'nowrap',
@@ -23,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'space-evenly',
 	},
 	text_content: {
-		margin: theme.spacing(1.5),
+		margin: theme.spacing(2.5),
 		display: 'flex',
 		flexDirection: 'row',
 		flexWrap: 'wrap',
@@ -31,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'space-evenly',
 	},
 	content_item: {
-		margin: theme.spacing(1.5),
+		margin: theme.spacing(3.5),
 		flex: '1 1 25%',
 	},
 }));

@@ -56,8 +56,6 @@ export default function HeadBar() {
 		});
 	};
 
-	const handleClick = (event, index) => {};
-
 	return (
 		<div className={classes.base_nav}>
 			<Paper className={classes.paper}>
