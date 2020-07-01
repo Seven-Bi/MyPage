@@ -32,7 +32,9 @@ export default function Top() {
 
 	return (
 		<Card className={classes.base_top}>
-			<img src={img1} alt="" width="250" height="400" />
+			<Card>
+				<img src={img1} alt="" width="250" height="400" />
+			</Card>
 			<div className={classes.text_content}>
 	            <Typography gutterBottom variant="h3">
 					STEVEN BI
