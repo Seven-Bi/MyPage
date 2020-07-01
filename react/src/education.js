@@ -65,7 +65,7 @@ export default function Education() {
 			'date': 'August 2014 to December 2018', 
 		},
 		{
-			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/XiangTan.png', 
+			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/Xiangtan.png', 
 			'title': 'XiangTan University', 
 			'role': 'Bachelor of Arts in History', 
 			'date': 'August 2008 to December 2011', 
