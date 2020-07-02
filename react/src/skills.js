@@ -14,15 +14,17 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: '#F2F2F2',
 	},
 	text_title: {
-		margin: theme.spacing(2),
+		margin: theme.spacing(1),
 		display: 'flex',
 		flexDirection: 'column',
 		flexWrap: 'nowrap',
-		alignItems: 'center',
-		justifyContent: 'space-evenly',
+	},
+	bg_title: {
+		backgroundColor: theme.palette.background.paper,
+		padding: theme.spacing(2),
 	},
 	text_content: {
-		margin: theme.spacing(2.5),
+		margin: theme.spacing(1),
 		display: 'flex',
 		flexDirection: 'row',
 		flexWrap: 'wrap',
@@ -30,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'space-evenly',
 	},
 	content_item: {
-		margin: theme.spacing(3.5),
+		margin: theme.spacing(1.5),
 		flex: '1 1 25%',
 	},
 }));
@@ -41,7 +43,7 @@ export default function Skills() {
 	return (
 		<Card className={classes.base_skill}>
 			<div className={classes.text_title}>
-	            <Typography gutterBottom variant="h5">
+	            <Typography className={classes.bg_title} gutterBottom variant="h5">
 					<strong>SKILLS</strong>
 	            </Typography>			
 			</div>

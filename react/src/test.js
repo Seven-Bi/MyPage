@@ -112,7 +112,7 @@ export default function HeadBar() {
           </Paper>
         ))}
       </Paper>
-      <Footer />}
+      <Footer />
     </div>
   );
 }

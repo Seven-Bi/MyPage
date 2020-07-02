@@ -13,12 +13,11 @@ const useStyles = makeStyles(theme => ({
 		width: '100%',
 	},
 	text_title: {
-		margin: theme.spacing(1.5),
+		margin: theme.spacing(1),
 		display: 'flex',
 		flexDirection: 'column',
 		flexWrap: 'nowrap',
 		alignItems: 'center',
-		justifyContent: 'space-evenly',
 	},
 }));
 
@@ -27,7 +26,7 @@ export default function FootBar() {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.base_footer}>
+		<Paper className={classes.base_footer}>
 			<Paper>
 				<div className={classes.text_title}>
 		            <Typography gutterBottom variant="h5">
@@ -35,6 +34,6 @@ export default function FootBar() {
 		            </Typography>			
 				</div>
 			</Paper>
-		</div>
+		</Paper>
 	);
 }

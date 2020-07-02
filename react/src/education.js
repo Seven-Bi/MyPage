@@ -8,10 +8,13 @@ import Paper from '@material-ui/core/Paper';
 
 
 const useStyles = makeStyles((theme) => ({
-	base_projects: {
-		marginTop: '3vh',
-		marginBottom: '3vh',
+	base_education: {
+		marginTop: '2vh',
+		marginBottom: '2vh',
 		backgroundColor: '#F2F2F2',
+		display: 'flex',
+		flexDirection: 'column',
+		flexWrap: 'nowrap',
 	},
 	text_title: {
 		margin: theme.spacing(1.5),
@@ -23,16 +26,24 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: theme.palette.background.paper,
 		padding: theme.spacing(2),
 	},
+	edu_layout: {
+		margin: theme.spacing(1.5),
+		display: 'flex',
+		flexDirection: 'column',
+		flexWrap: 'nowrap',
+	},
 	edu_content: {
-		margin: theme.spacing(3),
+		margin: theme.spacing(2),
 		display: 'flex',
 		flexDirection: 'row',
 		flexWrap: 'nowrap',
 		alignItems: 'center',
-		justifyContent: 'flex-start',
+	    [theme.breakpoints.down('md')]: {
+      		flexDirection: 'column'
+	    },
 	},
 	edu_content_left: {
-		margin: theme.spacing(2),
+		margin: theme.spacing(1),
 		justifyContent: 'center',
 		alignContent: 'center', 
 	},
@@ -40,17 +51,8 @@ const useStyles = makeStyles((theme) => ({
 		margin: '0.5vh',
 		backgroundColor: '#292929',
 	},
-	edu_title: {
-		marginLeft: '25vh',
-		display: 'flex',
-		flexDirection: 'column',
-		alignItems: 'center',
-		justifyContent: 'center',
-		alignContent: 'center', 
-	},
 	edu_info: {
-		width: '300px',
-		textAlign: 'center',
+		width: '130vh',
 	},
 }));
 
@@ -73,13 +75,13 @@ export default function Education() {
 	];
 
 	return (
-		<Card className={classes.base_projects}>
+		<Card className={classes.base_education}>
 			<div className={classes.text_title}>
 	            <Typography className={classes.bg_title} gutterBottom variant="h5">
 					<strong>EDUCATION</strong>
 	            </Typography>			
 			</div>
-			<div className={classes.text_title}>
+			<div className={classes.edu_layout}>
 				{edu_list.map(item => (
 					<div className={classes.edu_content}>
 						<Paper className={classes.edu_content_left} elevation={3}>
@@ -87,9 +89,8 @@ export default function Education() {
 								<img src={item.img} alt="" width="150" height="150" />
 							</div>
 						</Paper>
-
-						
-						<div className={classes.edu_title}>
+				
+						<div>
 							<div className={classes.edu_info}>
 					            <Typography gutterBottom variant="h5">
 									<strong>{item.title}</strong>

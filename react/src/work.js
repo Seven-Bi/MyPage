@@ -26,12 +26,14 @@ const useStyles = makeStyles((theme) => ({
 	},
 
 	work_content: {
-		margin: theme.spacing(3),
+		margin: theme.spacing(2),
 		display: 'flex',
 		flexDirection: 'row',
 		flexWrap: 'nowrap',
 		alignItems: 'center',
-		justifyContent: 'flex-start',
+	    [theme.breakpoints.down('md')]: {
+      		flexDirection: 'column'
+	    },
 	},
 	work_content_left: {
 		margin: theme.spacing(2),
@@ -43,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: '#292929',
 	},
 	job_title: {
-		marginLeft: '4vh',
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'center',
@@ -51,7 +52,6 @@ const useStyles = makeStyles((theme) => ({
 		alignContent: 'center', 
 	},
 	job_details: {
-		marginLeft: '1.5vh',
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'center',
@@ -60,7 +60,6 @@ const useStyles = makeStyles((theme) => ({
 	},
 	job_details_li: {
 		margin: theme.spacing(1.5),
-		textAlign: 'left',
 	}	
 }));
 
