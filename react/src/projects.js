@@ -60,6 +60,10 @@ const useStyles = makeStyles((theme) => ({
 	},
 	job_details_li: {
 		margin: theme.spacing(1.5),
+		textAlign: 'left',
+	    [theme.breakpoints.down('md')]: {
+      		textAlign: 'center',
+	    },
 	}	
 }));
 
