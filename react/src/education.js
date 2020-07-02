@@ -52,7 +52,10 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: '#292929',
 	},
 	edu_info: {
-		width: '130vh',
+		width: '110vh',
+	    [theme.breakpoints.down('md')]: {
+      		width: '100%',
+	    },
 	},
 }));
 
@@ -63,13 +66,13 @@ export default function Education() {
 		{
 			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/Curtin.png', 
 			'title': 'Cutin University', 
-			'role': 'Bachelor of Science in Software Engineering', 
-			'date': 'August 2014 to December 2018', 
+			'role': 'Bachelor of Science, Software Engineering', 
+			'date': 'August 2014 to December 2018',
 		},
 		{
 			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/XiangTan.png', 
 			'title': 'XiangTan University', 
-			'role': 'Bachelor of Arts in History', 
+			'role': 'Bachelor of Arts, History', 
 			'date': 'August 2008 to December 2011', 
 		},
 	];
@@ -95,7 +98,7 @@ export default function Education() {
 					            <Typography gutterBottom variant="h5">
 									<strong>{item.title}</strong>
 					            </Typography>
-					            <Typography gutterBottom variant="subtitle1">
+					            <Typography gutterBottom variant="subtitle2">
 									{item.role}
 					            </Typography>
 					            <Typography gutterBottom variant="subtitle2">
