@@ -100,8 +100,8 @@ export default function HeadBar() {
     orientation="vertical"
     value={value}
     onChange={handleChange}
-    indicatorColor="primary"
-    textColor="primary"
+    indicatorColor="secondary"
+    textColor="secondary"
     centered
     >
       <Tab label="Top" />
