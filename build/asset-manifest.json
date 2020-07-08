@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/MyPage/react/static/js/main.dd060adf.chunk.js",
+    "main.js.map": "/MyPage/react/static/js/main.dd060adf.chunk.js.map",
+    "runtime-main.js": "/MyPage/react/static/js/runtime-main.e9aa9961.js",
+    "runtime-main.js.map": "/MyPage/react/static/js/runtime-main.e9aa9961.js.map",
+    "static/js/2.9f278fc0.chunk.js": "/MyPage/react/static/js/2.9f278fc0.chunk.js",
+    "static/js/2.9f278fc0.chunk.js.map": "/MyPage/react/static/js/2.9f278fc0.chunk.js.map",
+    "index.html": "/MyPage/react/index.html",
+    "precache-manifest.94b6902a0675502e95d97b3469be57b7.js": "/MyPage/react/precache-manifest.94b6902a0675502e95d97b3469be57b7.js",
+    "service-worker.js": "/MyPage/react/service-worker.js",
+    "static/js/2.9f278fc0.chunk.js.LICENSE.txt": "/MyPage/react/static/js/2.9f278fc0.chunk.js.LICENSE.txt",
+    "static/media/profile_img.JPG": "/MyPage/react/static/media/profile_img.803bab91.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9aa9961.js",
+    "static/js/2.9f278fc0.chunk.js",
+    "static/js/main.dd060adf.chunk.js"
+  ]
+}
