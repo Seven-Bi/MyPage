@@ -72,18 +72,18 @@ export default function Work() {
 
 	const work_list = [
 		{
-			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/A.jpg', 
+			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/A.jpg', 
 			'title': 'South Pacific', 'role': 'ICT Developer', 
 			'date': 'February 2020 to June 2020', 
 			'description': ['Website development & maintain', 'Marketing email system development', 'UI design']},
 		{
-			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/B.png', 
+			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/B.png', 
 			'title': 'EEA', 
 			'role': 'Software Engineer', 
 			'date': 'July 2019 to October 2019', 
 			'description': ['Full stack development', 'API design']},
 		{
-			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/C.bmp', 
+			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/C.bmp', 
 			'title': 'PinYi', 
 			'role': 'Software Engineer', 
 			'date': 'September 2012 to July 2013', 
