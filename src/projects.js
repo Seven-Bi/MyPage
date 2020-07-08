@@ -78,7 +78,7 @@ export default function Projects() {
 			'description': ['Various of page effects', 'Responsive page design', 'Use pure Django, HTML, CSS, JS', 'Deploy on Heroku (migrate from AWS)', 'Enable emails receive from customers']},
 		{
 			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/visual_stock.png', 
-			'title': 'Visualstock', 
+			'title': 'VisualStock', 
 			'url': 'https://sheltered-garden-05712.herokuapp.com/', 
 			'description': ['Use Ajax to update page content', 'Output data as chart image on web page', 'Allow download data as a pdf file to local', 'Calculate a stock max profits within a range date by O(n) complexity']},
 	];
@@ -101,7 +101,7 @@ export default function Projects() {
 
 						
 						<div className={classes.job_title}>
-				            <Typography gutterBottom variant="h5">
+				            <Typography gutterBottom variant="h6">
 								<strong>{item.title}</strong>
 				            </Typography>
 				            <Typography gutterBottom variant="subtitle2">

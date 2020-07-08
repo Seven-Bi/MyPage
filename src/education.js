@@ -95,7 +95,7 @@ export default function Education() {
 				
 						<div>
 							<div className={classes.edu_info}>
-					            <Typography gutterBottom variant="h5">
+					            <Typography gutterBottom variant="h6">
 									<strong>{item.title}</strong>
 					            </Typography>
 					            <Typography gutterBottom variant="subtitle2">

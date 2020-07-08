@@ -108,7 +108,7 @@ export default function Work() {
 
 						
 						<div className={classes.job_title}>
-				            <Typography gutterBottom variant="h5">
+				            <Typography gutterBottom variant="h6">
 								<strong>{item.title}</strong>
 				            </Typography>
 				            <Typography gutterBottom variant="subtitle1">
