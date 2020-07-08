@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: '#292929',
 	},
 	edu_info: {
-		width: '110vh',
+		width: '80vh',
 	    [theme.breakpoints.down('md')]: {
       		width: '100%',
 	    },

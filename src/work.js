@@ -45,11 +45,20 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: '#292929',
 	},
 	job_title: {
+		// display: 'flex',
+		// flexDirection: 'column',
+		// alignItems: 'center',
+		// justifyContent: 'center',
+		// alignContent: 'center', 
 		display: 'flex',
+		marginLeft: '10vh',
 		flexDirection: 'column',
 		alignItems: 'center',
 		justifyContent: 'center',
 		alignContent: 'center', 
+	    [theme.breakpoints.down('md')]: {
+      		marginLeft: '0vh',
+	    },
 	},
 	job_details: {
 		display: 'flex',
