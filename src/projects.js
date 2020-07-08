@@ -72,12 +72,12 @@ export default function Projects() {
 
 	const work_list = [
 		{
-			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/bootbw.png', 
+			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/bootbw.png', 
 			'title': 'BootBW', 
 			'url': 'https://calm-tor-88874.herokuapp.com/', 
 			'description': ['Various of page effects', 'Responsive page design', 'Use pure Django, HTML, CSS, JS', 'Deploy on Heroku (migrate from AWS)', 'Enable emails receive from customers']},
 		{
-			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/visual_stock.png', 
+			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/visual_stock.png', 
 			'title': 'Visual Stock', 
 			'url': 'https://sheltered-garden-05712.herokuapp.com/', 
 			'description': ['Use Ajax to update page content', 'Output data as chart image on web page', 'Allow download data as a pdf file to local', 'Calculate a stock max profits within a range date by O(n) complexity']},
