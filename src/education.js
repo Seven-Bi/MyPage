@@ -64,13 +64,13 @@ export default function Education() {
 
 	const edu_list = [
 		{
-			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/Curtin.png', 
+			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/Curtin.png', 
 			'title': 'Cutin University', 
 			'role': 'Bachelor of Science, Software Engineering', 
 			'date': 'August 2014 to December 2018',
 		},
 		{
-			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/react/src/static/img/XiangTan.png', 
+			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/XiangTan.png', 
 			'title': 'XiangTan University', 
 			'role': 'Bachelor of Arts, History', 
 			'date': 'August 2008 to December 2011', 
