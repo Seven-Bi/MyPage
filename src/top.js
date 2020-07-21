@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
 		flexWrap: 'nowrap',
 		alignItems: 'center',
 		justifyContent: 'space-evenly',
+		[theme.breakpoints.down('md')]: {
+			flexDirection: 'column'
+		},
 	},	
 }));
 
