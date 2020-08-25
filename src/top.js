@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card'
-import img1 from './static/img/profile_img.JPG';
+import img1 from './static/img/new_profile_img.jpg';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
@@ -14,8 +14,15 @@ const useStyles = makeStyles((theme) => ({
 		marginBottom: '3vh',
 		backgroundColor: '#F2F2F2',
 	},
+	profile_img: {
+		width: '80%',
+		height: '70%',
+		maxWidth: '300px',
+		maxHeight: '400px',
+	},
 	text_content: {
-		margin: theme.spacing(1.5),
+		margin: theme.spacing(3),
+		alignItems: 'center'
 	},
 	personal_info: {
 		margin: theme.spacing(1.5),
@@ -36,17 +43,17 @@ export default function Top() {
 	return (
 		<Card className={classes.base_top}>
 			<Card>
-				<img src={img1} alt="" width="250" height="400" />
+				<img className={classes.profile_img} src={img1} alt="me" />
 			</Card>
 			<div className={classes.text_content}>
-	            <Typography gutterBottom variant="h3">
+	            <Typography gutterBottom variant="h4">
 					STEVEN BI
 	            </Typography>			
 			</div>
             
 			<div className={classes.text_content}>
-	            <Typography gutterBottom variant="h5">
-					FULL STACK DEVELOPER/SOFTWARE ENGINEER
+	            <Typography gutterBottom variant="h8">
+					SOFTWARE ENGINEER / FULL-STACK DEVELOPER
 	            </Typography>			
 			</div>
 
@@ -76,9 +83,9 @@ export default function Top() {
 			<Divider variant="middle" />
 
 			<div className={classes.text_content}>
-	            <Typography gutterBottom variant="body1">
-					Software Engineer with years of programming experiences in coding Python and core Java, passionate about web app development with Django ecosystem and Restful API design.
-					Familiar with React, Ajax, Git and Docker.
+	            <Typography gutterBottom variant="body2">
+					Qualified software engineer with web programming experiences in coding Python or core Java, passionate about web app development with Django ecosystem and React frameworks.
+					Familiar with Docker, SQL, Git and knowledge of AWS & GCP.
 	            </Typography>		
 			</div>
 		</Card>
