@@ -84,19 +84,22 @@ export default function Work() {
 			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/A.jpg', 
 			'title': 'South Pacific', 'role': 'ICT Developer', 
 			'date': 'February 2020 to June 2020', 
-			'description': ['Website development & maintain', 'Marketing email system development', 'UI design']},
+			'description': ['Website development & maintain', 'Marketing email system development', 'UI design']
+		},
 		{
 			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/B.png', 
 			'title': 'EEA', 
-			'role': 'Software Engineer', 
+			'role': 'Intern Software Engineer', 
 			'date': 'July 2019 to October 2019', 
-			'description': ['Full stack development', 'API design']},
-		{
-			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/C.bmp', 
-			'title': 'PinYi', 
-			'role': 'Software Engineer', 
-			'date': 'September 2012 to July 2013', 
-			'description': ['System maintain & assist new feature development', 'Website maintain']},
+			'description': ['Full stack development', 'API design']
+		}//,
+		// {
+		// 	'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/C.bmp', 
+		// 	'title': 'PinYi', 
+		// 	'role': 'Software Engineer', 
+		// 	'date': 'September 2012 to July 2013', 
+		// 	'description': ['System maintain & assist new feature development', 'Website maintain']
+		// },
 	];
 
 	return (
