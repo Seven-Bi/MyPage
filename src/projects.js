@@ -77,13 +77,19 @@ export default function Projects() {
 	const work_list = [
 		{
 			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/bootbw.png', 
-			'title': 'Web Demo', 
+			'title': 'Business Website Demo', 
 			'sub': 'Html Css Jquery & Django',
 			'url': 'https://calm-tor-88874.herokuapp.com/', 
 			'description': ['Various of page effects', 'Responsive page design', 'Use pure Django, HTML, CSS, JS', 'Deploy on Heroku (migrate from AWS)', 'Enable emails receive from customers']},
 		{
+			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/vs_v2.png', 
+			'title': 'React UI Widget', 
+			'sub': 'React Socket Material-ui & Docker',
+			'url': 'https://thawing-bayou-31509.herokuapp.com/', 
+			'description': ['React App', 'Websocket start/pause', 'API data manipulate']},
+		{
 			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/visual_stock.png', 
-			'title': 'Web Demo', 
+			'title': 'Django Web Demo', 
 			'sub': 'Ajax Matplotlib & Django',
 			'url': 'https://sheltered-garden-05712.herokuapp.com/', 
 			'description': ['Use Ajax to update page content', 'Output data as chart image on web page', 'Allow download data as a pdf file to local', 'Calculate a stock max profits within a range date by O(n) complexity']},
@@ -101,7 +107,9 @@ export default function Projects() {
 					<div className={classes.work_content}>
 						<Paper className={classes.work_content_left} elevation={3}>
 							<div className={classes.logo_content}>
-								<img src={item.img} alt="" width="150" height="150" />
+								<a href={item.url}>
+									<img src={item.img} alt="" width="150" height="150" />
+								</a>
 							</div>
 						</Paper>
 
