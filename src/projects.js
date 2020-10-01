@@ -89,10 +89,10 @@ export default function Projects() {
 			'description': ['React App', 'Websocket start/pause', 'API data manipulate']},
 		{
 			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/visual_stock.png', 
-			'title': 'Django Web Demo', 
+			'title': 'Django Website Demo', 
 			'sub': 'Ajax Matplotlib & Django',
 			'url': 'https://sheltered-garden-05712.herokuapp.com/', 
-			'description': ['Use Ajax to update page content', 'Output data as chart image on web page', 'Allow download data as a pdf file to local', 'Calculate a stock max profits within a range date by O(n) complexity']},
+			'description': ['Ajax update page', 'Output chart image base on data', 'Allow download data as pdf file', 'Calculate a stock max profits within a range date']},
 	];
 
 	return (
