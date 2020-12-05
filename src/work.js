@@ -81,6 +81,12 @@ export default function Work() {
 
 	const work_list = [
 		{
+			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/atomorphis.jpg', 
+			'title': 'Atomorphis', 'role': 'Software Developer', 
+			'date': 'Nov 2020 to Present', 
+			'description': ['UI/UX implementing', 'Developing new minging modeling system supports different devices', 'Help and maintain workflow current IT services']
+		},	
+		{
 			'img': 'https://raw.githubusercontent.com/Seven-Bi/MyPage/master/src/static/img/A.jpg', 
 			'title': 'South Pacific', 'role': 'ICT Developer', 
 			'date': 'February 2020 to June 2020', 
